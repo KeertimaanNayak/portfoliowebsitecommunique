@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+	padding=0;
+	margin=0;
+	box-sizing: border-box;
+}
+body{
+	background-color: white;
+	overflow-x: hidden;
+}
+li a{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	color: black;
+	text-decoration: none;
+}
+.navba{
+	list-style: none;
+	float: right;
+}
+.navba li{
+	display: inline-block;
+	padding: 5px 15px;
+}
+.navba li a{
+	transition: all 0.3s ease 0s;
+	text-align: center;
+	padding:5px 20px;
+}
+.navba li a:hover{
+	transition: all 0.3s ease 0s;
+	color:#255784;
+	background:#2196f3;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3; 
+}
+.active a{
+	background-color: #2196f3;
+	color:#ffffff;
+	border-radius: 5px;
+}
+.heading{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+h1{
+	position: absolute;
+	top:40px;
+	left:100px;
+	font-size: 60px;
+	color: #111;
+}
+h1 span{
+	display:table-cell;
+	animation: animate 2s linear infinite;
+}
+h1 span:nth-child(1)
+{
+	animation-delay: 0.25s;
+}
+h1 span:nth-child(2)
+{
+	animation-delay: 0.5s;
+}
+h1 span:nth-child(3)
+{
+	animation-delay: 0.75s;
+}
+h1 span:nth-child(4)
+{
+	animation-delay: 1s;
+}
+h1 span:nth-child(5)
+{
+	animation-delay: 1.25s;
+}
+h1 span:nth-child(6)
+{
+	animation-delay: 1.5s;
+}
+h1 span:nth-child(7)
+{
+	animation-delay: 1.75s;
+}
+h1 span:nth-child(8)
+{
+	animation-delay: 2s;
+}
+h1 span:nth-child(9)
+{
+	animation-delay: 2.25s;
+}
+h1 span:nth-child(10)
+{
+	animation-delay: 2.5s;
+}
+h1 span:nth-child(11)
+{
+	animation-delay: 2.75s;
+}
+h1 span:nth-child(12)
+{
+	animation-delay: 3s;
+}
+@keyframes animate{
+	0%,100%{
+		color: #fff;
+		filter: blur(2px);
+		text-shadow: 0 0 10px #00b3ff,0 0 20px #00b3ff,0 0 40px #00b3ff,0 0 80px #00b3ff,0 0 120px #00b3ff,0 0 200px #00b3ff,0 0 300px #00b3ff,0 0 400px #00b3ff,0 0 500px #00b3ff,0 0 600px #00b3ff,0 0 700px #00b3ff,0 0 800px #00b3ff;
+	}
+	5%,95%{
+		color:#111;
+		filter:blur(0px);
+		text-shadow: 0 0 10px #00b3ff,
+	}
+}
+section{
+	position: absolute;
+	top:200px;
+	display: flex;
+	width: 98%;
+	justify-content: space-between;
+}
+.body{
+	font-size: 40px;
+	flex-basis: 30%;
+	margin:20px;
+	padding: 10px;
+	color: black;
+	border:1px solid white;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3; 
+	flex:2;
+}
+.quote{
+	position: absolute;
+	top: 625px;
+	left:600px;
+}
+.quote h2{
+	font-size: 30px;
+	font-family: Papyrus;
+	background-color: grey;
+}
+@media(max-width:1200px){
+	li a{
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 500;
+	    font-size: 20px;
+	    color: black;
+	    text-decoration: none;
+	}
+	.navba li{
+		display: inline-block;
+	    padding: 5px 5px;
+    }   
+    .navba li a{
+	    transition: all 0.3s ease 0s;
+	    text-align: center;
+	    padding:5px 5px;
+	}
+	h1{
+		position: absolute;
+		top:100px;
+	}
+	section{
+		position: absolute;
+		top:300px;
+	}
+	.quote{
+		position: absolute;
+		top:880px;
+		left: 300px;
+	}
+}
+@media(max-width: 900px){
+	li a{
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 500;
+	    font-size: 20px;
+	    color: black;
+	    text-decoration: none;
+	}
+	.navba li{
+		display: inline-block;
+	    padding: 5px 2px;
+    }   
+    .navba li a{
+	    transition: all 0.3s ease 0s;
+	    text-align: center;
+	    padding:5px 5px;
+	}
+	.body{
+		font-size: 35px;
+	}
+	.quote{
+		position: absolute;
+		top:840px;
+		left: 100px;
+	}
+}
+@media(max-width: 700px){
+	li a{
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 500;
+	    font-size: 15px;
+	    color: black;
+	    text-decoration: none;
+	}
+	.navba li{
+		display: inline-block;
+	    padding: 5px 2px;
+    }   
+    .navba li a{
+	    transition: all 0.3s ease 0s;
+	    text-align: center;
+	    padding:5px 5px;
+	}
+	h1{
+		font-size: 55px;
+	}
+	.body{
+		font-size: 30px;
+	}
+	.quote{
+		position: absolute;
+		left:100px;
+		top:820px;
+	}
+	.quote h2{
+		font-size: 20px;
+	}
+}
+@media(max-width: 575px){
+	li a{
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 500;
+	    font-size: 10px;
+	    color: black;
+	    text-decoration: none;
+	}
+	.navba li{
+		display: inline-block;
+	    padding: 2px 1px;
+    }   
+    .navba li a{
+	    transition: all 0.3s ease 0s;
+	    text-align: center;
+	    padding:5px 2px;
+	}
+	.body{
+		font-size: 25px;
+	}
+	h1{
+		position: absolute;
+		left: 30px;
+	}
+	.quote{
+		position: absolute;
+		left:40px;
+		top: 780px;
+	}
+	.quote h2{
+		font-size: 18px;
+	}
+}
+@media(max-width: 400px){
+li a{
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 500;
+	    font-size: 13px;
+	    color: black;
+	    text-decoration: none;
+	    position: absolute;
+	    left: 110px;
+	}
+	.navba li{
+		display: block;
+		align-items: center;
+	    padding: 15px 10px;
+    }   
+    .navba li a{
+	    transition: all 0.3s ease 0s;
+	    text-align: center;
+	    padding:5px 5px;
+	}
+	.body{
+		font-size: 20px;
+	}
+	h1{
+		position: absolute;
+		top:200px;
+		left: 30px;
+		font-size: 40px;
+	}
+	.quote{
+		position: absolute;
+		left:20px;
+		top: 780px;
+	}
+	.quote h2{
+		font-size: 15px;
+	}
+}
+@media(max-width: 300px){
+li a{
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 500;
+	    font-size: 10px;
+	    color: black;
+	    text-decoration: none;
+	    position: absolute;
+	    left: 60px;
+	}
+	.navba li{
+		display: block;
+		align-items: center;
+	    padding: 15px 10px;
+    }   
+    .navba li a{
+	    transition: all 0.3s ease 0s;
+	    text-align: center;
+	    padding:5px 5px;
+	}
+
+	.body{
+		font-size: 15px;
+	}
+	h1{
+		position: absolute;
+		top:200px;
+		left: 20px;
+		font-size: 40px;
+	}
+	.quote{
+		position: absolute;
+		left:20px;
+		top: 860px;
+	}
+	.quote h2{
+		font-size: 15px;
+	}
+}
+@media(max-width: 170px){
+li a{
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 500;
+	    font-size: 10px;
+	    color: #edf0f1;
+	    text-decoration: none;
+	    position: absolute;
+	    left: 50px;
+	}
+	.navba li{
+		display: block;
+		align-items: center;
+	    padding: 15px 10px;
+    }   
+    .navba li a{
+	    transition: all 0.3s ease 0s;
+	    text-align: center;
+	    padding:5px 5px;
+	}
+}
